@@ -27,6 +27,7 @@
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
+        "postinstall": "prisma generate"
         "post-create-project-cmd": [
             "@php saya key"
         ]
