@@ -1,5 +1,15 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ]
+    "version": 2,
+    "builds": [
+        {
+            "src": "resources/views/welcome.kita.php",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "resources/views/welcome.kita.php"
+        }
+    ]
 }
